@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "example-typescript",
+  "dependencies": {
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "typescript": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "jest": "*",
+    "prettier": "^1.14.3",
+    "ts-jest": "*"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ]
+  }
+}
